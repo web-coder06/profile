@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #eaeaea;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #5a0000, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero.small {
+  height: 50vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #f5c16c;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,215,160,0.15);
+}
+
+.card h2 {
+  color: #f5c16c;
+  margin-bottom: 15px;
+}
+
+.card ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.card ul li span {
+  color: #f5c16c;
+  font-weight: 600;
+}
+
+/* SLIDER */
+.slider {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 22px;
+  border: 1px solid #f5c16c;
+  color: #f5c16c;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: #f5c16c;
+  color: #000;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
+}
+/* FOOTER SOCIAL */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0b0b0b;
+  border-top: 1px solid rgba(245,193,108,0.2);
+}
+
+.social-links {
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  margin: 0 12px;
+  font-size: 1.4rem;
+  color: #f5c16c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
